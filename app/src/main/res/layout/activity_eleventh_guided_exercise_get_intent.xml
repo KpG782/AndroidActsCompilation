@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".EleventhGuidedExerciseGetIntent">
+
+    <!-- Header Title -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result of Guided Exercise"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Result Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardResultContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white">
+
+            <!-- Display Name -->
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Display Age -->
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: "
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Display Gender -->
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Display Subjects -->
+            <TextView
+                android:id="@+id/textViewSubjects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subjects: "
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Display Job -->
+            <TextView
+                android:id="@+id/textViewJob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job: "
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Display Thesis -->
+            <TextView
+                android:id="@+id/textViewThesis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thesis: "
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

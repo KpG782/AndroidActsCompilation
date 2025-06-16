@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".EleventhGuidedExercise">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Intent Guided Exercise"
+            android:textColor="#A4A4A4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Name Container -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNameContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/etNameGE11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your name"
+                android:padding="12dp"
+                android:background="@android:color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Age Container -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAgeContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/cardNameContainer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/etAgeGE11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your age"
+                android:padding="12dp"
+                android:background="@android:color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Gender Radio Buttons -->
+        <LinearLayout
+            android:id="@+id/linearGenderContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/cardAgeContainer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/rbtnMaleGE11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rbtnFemaleGE11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginStart="16dp" />
+
+        </LinearLayout>
+
+        <!-- Subjects Checkboxes -->
+        <CheckBox
+            android:id="@+id/chkAppdetGE11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application Development"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearGenderContainer"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chkIntcompGE11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internet Computing"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/chkAppdetGE11"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chkComprog1GE11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer Programming 1"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/chkIntcompGE11"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chkComprog2GE11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer Programming 2"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/chkComprog1GE11"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Job Spinner -->
+        <Spinner
+            android:id="@+id/spnrJobGE11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/chkComprog2GE11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Thesis ListView -->
+        <ListView
+            android:id="@+id/lvThesisGE11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/spnrJobGE11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmitGE11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#03A9F4"
+            android:padding="12dp"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lvThesisGE11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

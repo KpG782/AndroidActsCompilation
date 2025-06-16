@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SixthGuidedExercise">
+
+    <!-- Header Title -->
+
+    <!-- CheckBox One -->
+
+    <!-- CheckBox Two -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:padding="8dp"
+        android:text="Checkbox and Text Color Guided Exercise"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="One"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+    <CheckBox
+        android:id="@+id/chkTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Two"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/chkOne"
+        app:layout_constraintStart_toStartOf="@id/chkOne"
+        android:layout_marginTop="8dp" />
+
+    <!-- CheckBox Three -->
+    <CheckBox
+        android:id="@+id/chkThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Three"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/chkTwo"
+        app:layout_constraintStart_toStartOf="@id/chkTwo"
+        android:layout_marginTop="8dp" />
+
+    <!-- CheckBox Four -->
+    <CheckBox
+        android:id="@+id/chkFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Four"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/chkThree"
+        app:layout_constraintStart_toStartOf="@id/chkThree"
+        android:layout_marginTop="8dp" />
+
+    <!-- Show Result Button -->
+    <Button
+        android:id="@+id/btnClickGE6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#03A9F4"
+        android:padding="12dp"
+        android:text="Show Result"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkFour"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <!-- Result Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardResultContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnClickGE6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9">
+
+        <TextView
+            android:id="@+id/tvResultGE6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Result will be displayed here."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:background="@android:color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

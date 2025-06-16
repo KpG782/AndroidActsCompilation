@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground"
+    tools:context=".EmployeePayroll">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="16dp"
+            android:text="Employee Payroll Computation"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee ID:"
+            android:paddingTop="8dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/employeeIdSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/employeeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee Name"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position Code:"
+            android:paddingTop="8dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/positionCodeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Civil Status:"
+            android:paddingTop="8dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/civilStatusGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Single" />
+
+            <RadioButton
+                android:id="@+id/radioMarried"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Married" />
+
+            <RadioButton
+                android:id="@+id/radioWidowed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Widowed" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Days Worked:"
+            android:paddingTop="8dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/daysWorkedSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/containerResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"/>
+
+        <Button
+            android:id="@+id/computeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compute"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF4444"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF4444"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

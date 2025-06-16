@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title for Guided Exercises -->
+        <TextView
+            android:id="@+id/guided_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guided Exercises"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Guided Exercise Buttons -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/guided_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/guided_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp">
+
+            <!-- Guided Exercise Buttons -->
+            <Button
+                android:id="@+id/btn_guided_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 1"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 2"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_guided_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 3"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_guided_2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <!-- Additional rows for Guided Exercise Buttons -->
+            <Button
+                android:id="@+id/btn_guided_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 4"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_1"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 5"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_guided_4"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_2"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 6"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_guided_5"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_3"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 7"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_4"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 8"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_guided_7"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_5"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 9"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_guided_8"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_6"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 10"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_7"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 11"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_guided_10"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_8"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 12"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_guided_11"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_9"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 13"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_10"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 14"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_guided_13"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_11"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_guided_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Exercise 15"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_guided_14"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_12"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <!-- Problem Exercises Title -->
+            <TextView
+                android:id="@+id/problem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Problem Exercises"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/btn_guided_15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Problem Exercise Buttons -->
+            <Button
+                android:id="@+id/btn_problem_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Problem 1"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColor="@android:color/white"
+                app:layout_constraintWidth_percent="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/problem_title" />
+
+            <Button
+                android:id="@+id/btn_problem_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Problem 2"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColor="@android:color/white"
+                app:layout_constraintWidth_percent="0.3"
+                app:layout_constraintStart_toEndOf="@id/btn_problem_1"
+                app:layout_constraintTop_toBottomOf="@id/problem_title" />
+
+            <Button
+                android:id="@+id/btn_problem_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Problem 3"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColor="@android:color/white"
+                app:layout_constraintWidth_percent="0.3"
+                app:layout_constraintStart_toEndOf="@id/btn_problem_2"
+                app:layout_constraintTop_toBottomOf="@id/problem_title" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

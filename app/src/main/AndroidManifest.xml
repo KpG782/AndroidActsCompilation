@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Specifies that the app requires access to the phone's camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_AIRPLANE_MODE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ElectiveFinals"
+        tools:targetApi="31">
+        <activity
+            android:name=".FifteenthGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".FourteenthGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".ThirteenthGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".TwelfthGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".EleventhGuidedExerciseDragAndDrop"
+            android:exported="false" />
+        <activity
+            android:name=".EleventhGuidedExerciseGetIntent"
+            android:exported="false" />
+        <activity
+            android:name=".EleventhGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".TenthGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".NinthGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".EightGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".SeventhGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".SixthGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".SummaryActivity1"
+            android:exported="false" /> <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Machine Problems -->
+        <activity
+            android:name=".MachineProblem1"
+            android:exported="false" />
+        <activity
+            android:name=".MachineProblem2"
+            android:exported="false" />
+        <activity
+            android:name=".MachineProblem3"
+            android:exported="false" /> <!-- Guided Exercises -->
+        <activity
+            android:name=".FirstGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".SecondGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".FourthGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".FifthGuidedExercise"
+            android:exported="false" />
+    </application>
+
+</manifest>

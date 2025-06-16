@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clDragNDrop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EleventhGuidedExerciseDragAndDrop">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drag and Drop Guided Exercise"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:text="Drag Status"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBatman"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/batman"
+        android:tag="batman"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/ivSuperman"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/superman"
+        android:tag="superman"
+        app:layout_constraintTop_toTopOf="@id/ivBatman"
+        app:layout_constraintStart_toEndOf="@id/ivBatman"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/ivWolverine"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/wolverine"
+        android:tag="wolverine"
+        app:layout_constraintTop_toBottomOf="@id/ivBatman"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/ivIronman"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ironman"
+        android:tag="ironman"
+        app:layout_constraintTop_toTopOf="@id/ivWolverine"
+        app:layout_constraintStart_toEndOf="@id/ivWolverine"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/ivHero"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/hero"
+        app:layout_constraintTop_toBottomOf="@id/ivIronman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/tvNameOfHero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hero Name"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/ivHero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

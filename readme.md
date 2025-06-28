@@ -64,6 +64,18 @@ ElectiveAppLast/
 
 ---
 
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/8ba67f8b-29f5-4245-acc8-a270243dbf0e)
+![image](https://github.com/user-attachments/assets/aadc85bb-25f0-4241-b6b6-bf7386767f75)
+![image](https://github.com/user-attachments/assets/f3abe33b-13a2-4747-9f7a-d298de338c1f)
+![image](https://github.com/user-attachments/assets/e2293905-f480-41a7-b9da-16764224c95f)
+
+
+
+
+---
+
 ## 🚦 Quick Start
 
 1. **Clone the repository**
@@ -88,6 +100,7 @@ ElectiveAppLast/
 - **Brian Papa** — Collaborator
 
 ---
+
 
 ## 📚 For Learners, By Learners
 
